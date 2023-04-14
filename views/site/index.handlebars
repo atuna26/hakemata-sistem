@@ -1,0 +1,181 @@
+<div class="barColor"
+    style="background-color: rgb(35, 34, 66); width: 100%; text-align:end; color:white; padding-top:0.5em; padding-right:0.7em; opacity:0.8">
+</div>
+</div>
+</div>
+<div class="locations">
+    <ul class="locationsList">
+        <li>Atamalar > Ana Sayfa</li>
+        <li><i class="fa-solid fa-circle-question"></i></li>
+    </ul>
+</div>
+</nav>
+
+<div class="mainPage">
+    <div class="uk-child-width-1-4@s uk-grid-match uk-margin-top uk-margin-medium-right" style="margin: 0;width:100vw;" uk-grid>
+        <div>
+            <a href="/hakem">
+            <div class="uk-card uk-card-secondary uk-card-hover uk-card-body">
+                <h3 class="uk-card-title">Hakem <img src="/img/referee.svg" width="30px" height="30px"
+                        style="float:right;opacity:0.5;"></h3>
+                <p>Hakem Sayısı:{{refereeCount}}</p>
+            </div>
+            </a>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                <h3 class="uk-card-title">Lig <img src="/img/ball.svg" width="30px" height="30px" style="float:right;">
+                </h3>
+                <p>Lig Sayısı:{{leagueCount}} </p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+                <h3 class="uk-card-title">Takım<img src="/img/groups.svg" width="30px" height="30px"
+                        style="float:right;"></h3>
+                <p>Takım Sayısı:{{teamCount}}</p>
+            </div>
+        </div>
+        <div>
+            <a href="/fikstur">
+            <div class="uk-card uk-card-hover uk-card-body uk-light" style="background-color: #32d296;">
+                <h3 class="uk-card-title">Fikstür<img src="/img/ball.svg" width="30px" height="30px"
+                        style="float:right;"></h3>
+                <p>Oluşturulan Maç Sayısı:{{fixtureCount}}</p>
+            </div>
+            </a>
+        </div>
+    </div>
+    <div class="hr" style="margin-top: 2em;"></div>
+
+    <div class="boxSettings" style="width: 45vw;height:400px">
+        <table id="stacked-example-3"
+            class="charts-css column hide-data show-heading show-labels show-primary-axis show-3-secondary-axes data-spacing-10 multiple stacked">
+            <caption> Hakem Atamaları </caption>
+            <thead>
+                <tr>
+                    <th scope="col"> Toplam </th>
+                    <th scope="col"> Atanan </th>
+                    <th scope="col"> Atanmayan </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="zoom">
+                    <th scope="row"> 1. Hafta </th>
+                    <td style="--size: calc(8 / 8);"><span class="data"> 8 </span></td>
+                    <td style="--size: calc(3 / 8);"><span class="data"> 3 </span></td>
+                    <td style="--size: calc(5 / 8);"><span class="data"> 5 </span></td>
+                </tr>
+                <tr class="zoom">
+                    <th scope="row"> 2. Hafta </th>
+                    <td style="--size: calc(8 / 8);"><span class="data"> 8 </span></td>
+                    <td style="--size: calc(5 / 8);"><span class="data"> 5 </span></td>
+                    <td style="--size: calc(3 / 8);"><span class="data"> 3 </span></td>
+                </tr>
+                <tr class="zoom">
+                    <th scope="row"> 3. Hafta </th>
+                    <td style="--size: calc(8 / 8);"><span class="data"> 8 </span></td>
+                    <td style="--size: calc(4 / 8);"><span class="data"> 4 </span></td>
+                    <td style="--size: calc(4 / 8);"><span class="data"> 4 </span></td>
+                </tr>
+                <tr class="zoom">
+                    <th scope="row"> 4. Hafta </th>
+                    <td style="--size: calc(8 / 8);"><span class="data"> 8 </span></td>
+                    <td style="--size: calc(1 / 8);"><span class="data"> 1 </span></td>
+                    <td style="--size: calc(7 / 8);"><span class="data"> 7 </span></td>
+                </tr>
+                <tr class="zoom">
+                    <th scope="row"> 5. Hafta </th>
+                    <td style="--size: calc(8 / 8);"><span class="data"> 8 </span></td>
+                    <td style="--size: calc(0.5 / 8);"><span class="data"> 0 </span></td>
+                    <td style="--size: calc(0.5 / 8);"><span class="data"> 0 </span></td>
+                </tr>
+                <tr class="zoom">
+                    <th scope="row"> 6. Hafta </th>
+                    <td style="--size: calc(8 / 8);"><span class="data"> 8 </span></td>
+                    <td style="--size: calc(0.5 / 8);"><span class="data"> 0 </span></td>
+                    <td style="--size: calc(0.5 / 8);"><span class="data"> 0 </span></td>
+                </tr>
+                <tr class="zoom">
+                    <th scope="row"> 8. Hafta </th>
+                    <td style="--size: calc(8 / 8);"><span class="data"> 8 </span></td>
+                    <td style="--size: calc(0.5 / 8);"><span class="data"> 0 </span></td>
+                    <td style="--size: calc(0.5 / 8);"><span class="data"> 0 </span></td>
+                </tr>
+                <tr class="zoom">
+                    <th scope="row"> 8. Hafta </th>
+                    <td style="--size: calc(8 / 8);"><span class="data"> 8 </span></td>
+                    <td style="--size: calc(0.5 / 8);"><span class="data"> 0 </span></td>
+                    <td style="--size: calc(0.5 / 8);"><span class="data"> 0 </span></td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="boxSettings" style="width: 40vw;height:400px">
+        <table id="line-example-8" class="charts-css line multiple hide-data show-labels">
+             Sistem Performansı
+            <thead>
+                <tr>
+                    <th scope="col"> Year </th>
+                    <th scope="col"> Progress 1 </th>
+                    <th scope="col"> Progress 2 </th>
+                    <th scope="col"> Progress 3 </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"> 2000 </th>
+                    <td style="--start: 0.1; --size: 0.5;"><span class="data"> 50 </span></td>
+                    <td style="--start: 0; --size: 0.2;"><span class="data"> 20 </span></td>
+                    <td style="--start: 0.2; --size: 0.4;"><span class="data"> 40 </span></td>
+                </tr>
+                <tr>
+                    <th scope="row"> 2010 </th>
+                    <td style="--start: 0.5; --size: 0.8;"><span class="data"> 80 </span></td>
+                    <td style="--start: 0.2; --size: 0.5;"><span class="data"> 50 </span></td>
+                    <td style="--start: 0.4; --size: 0.1;"><span class="data"> 10 </span></td>
+                </tr>
+                <tr>
+                    <th scope="row"> 2020 </th>
+                    <td style="--start: 0.8; --size: 0.4;"><span class="data"> 40 </span></td>
+                    <td style="--start: 0.5; --size: 0.3;"><span class="data"> 30 </span></td>
+                    <td style="--start: 0.1; --size: 0.2;"><span class="data"> 20 </span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div
+id="myChart" style="width:100%; max-width:600px; height:500px;">
+</div>
+
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+const data = google.visualization.arrayToDataTable([
+  ['Hakemler', 'Maçları'],
+  ['Hakan Art',22.4],
+  ['Mehmet Cihan',22.4],
+  ['Selim Duran',40.6],
+  ['Sipahi Er',8.6],
+  ['Yılmaz Tek',28.4],
+  ['Tankurt Sayın',14],
+  ['Kerimcan Aykırı',23.9],
+  ['Muhammet Sözüer',10.5],
+  ['Diğer',4],
+]);
+
+const options = {
+  title:'Hakem Ağırlıkları'
+};
+
+const chart = new google.visualization.PieChart(document.getElementById('myChart'));
+  chart.draw(data, options);
+}
+</script>
+
+</div>
