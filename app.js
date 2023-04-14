@@ -13,7 +13,8 @@ const helpers = require('handlebars-helpers');
 const moment = require('moment');
 mongoose.set('strictQuery', false);
 
-mongoose.connect("mongodb://127.0.0.1/hakematadb", {
+mongoose.connect("process.env.DB_URI", {
+    dbName: 'hakematadb',
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
