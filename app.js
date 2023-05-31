@@ -3,7 +3,7 @@ const express = require("express")
 const exphbs = require("express-handlebars")
 const app = express()
 const bodyParser = require("body-parser")
-const port = process.env.PORT
+const port = 3000
 const hostname = "127.0.0.1"
 const mongoose = require("mongoose")
 const expressSession = require("express-session")
@@ -13,8 +13,7 @@ const helpers = require('handlebars-helpers');
 const moment = require('moment');
 mongoose.set('strictQuery', false);
 
-mongoose.connect("process.env.DB_URI", {
-    dbName: 'hakematadb',
+mongoose.connect("mongodb+srv://alperentuna26:ormVStovLdVRQyUk@atuna.uqlxl3k.mongodb.net/hakematadb", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
@@ -110,5 +109,5 @@ app.use((req, res, next) => {
     }
     next();
 })
-
-app.listen(port, () => console.log(`Example app listening ${hostname}:${port}`))
+app.listen(process.env.PORT || 3000);
+//app.listen(port, () => console.log(`Example app listening ${hostname}:${port}`))
